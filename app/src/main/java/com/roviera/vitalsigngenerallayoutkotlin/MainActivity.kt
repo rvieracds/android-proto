@@ -14,6 +14,13 @@ import android.support.v4.view.ViewPager
 
 
 import kotlin.math.roundToInt
+import android.support.v4.app.FragmentPagerAdapter
+
+import android.support.v4.app.Fragment
+import android.support.v4.app.FragmentManager
+
+import com.viewpagerindicator.CirclePageIndicator;
+import com.viewpagerindicator.TitlePageIndicator;
 
 
 class MainActivity : AppCompatActivity() {
@@ -84,19 +91,31 @@ class MainActivity : AppCompatActivity() {
     lateinit var maleButton: Button;
     lateinit var unspecifiedButton: Button;
 
-    lateinit var mViewPager: ViewPager;
+    lateinit  var circleIndicator: CirclePageIndicator
+
+    //lateinit var mViewPager: ViewPager;
+    //lateinit var adapterViewPager: FragmentPagerAdapter;
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        mViewPager = view.findViewById(R.id.viewpager)
-        mViewPager.adapter = SamplePagerAdapter()
+        //mViewPager = findViewById(R.id.viewPager)
+        //mViewPager.adapter = ViewPagerAdapter(this)
+
+        val viewPager = findViewById<ViewPager>(R.id.viewPager)
+        if (viewPager != null) {
+            //Set the pager with an adapter
+            val adapter = ViewPagerAdapter(supportFragmentManager)
+            viewPager.adapter = adapter
+
+            //Bind the title indicator to the adapter
+            circleIndicator = findViewById<CirclePageIndicator>(R.id.indicator)
+            circleIndicator.setViewPager(viewPager)
+        }
 
 
-
-
-        
         // ==========================================================================================================
 
         // GET LINEARLAYOUT INSTANCES
@@ -598,12 +617,12 @@ class MainActivity : AppCompatActivity() {
 
 
         // FLOATING ACTION BUTTON ACTION
-        val fab: View = findViewById(R.id.fab)
+        /*val fab: View = findViewById(R.id.fab)
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Here's a Snackbar", Snackbar.LENGTH_LONG)
                 .setAction("Action", null)
-                .show()
-        }
+                .show()*/
+        //}
     }
 
     private fun updateDOB(year: String, month: String, day: String): String {
@@ -658,6 +677,5 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-
-
 }
+

@@ -18,134 +18,81 @@
         tools:context=".MainActivity"
         android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_margin="14dp">
+        android:layout_height="fill_parent">
         <!-- *************************************************************************** -->
         <!-- **************                SECTION 1                      ************** -->
         <!-- *************************************************************************** -->
-        <!-- BEGIN: FIRST LINE BUTTONS -->
+
         <LinearLayout
-            android:id="@+id/llfirstline"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="7dp"
-            android:visibility="gone">
-            <Button
-                android:id="@+id/ageButton"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/button_left_rounded_corners_gradient"
-                android:text="Age"
-                android:textColor="#ffffff"
-                android:lineSpacingExtra="8sp"
-                android:textSize="14sp"
-                android:fontFamily="sans-serif"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="1dp"
-                android:layout_height="wrap_content"
-                android:background="@android:color/white"/>
-            <Button
-                android:id="@+id/dobButton"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/button_right_rounded_corners_gradient"
-                android:text="DOB"
-                android:textColor="#ffffff"
-                android:lineSpacingExtra="8sp"
-                android:textSize="14sp"
-                android:fontFamily="sans-serif"
-                android:textStyle="bold"/>
-        </LinearLayout>
-        <!-- END: FIRST LINE BUTTONS -->
+            android:orientation="vertical"
+            android:layout_margin="14dp">
 
-        <!-- BEGIN: AGE INPUT FIELDS -->
-        <LinearLayout
-            android:id="@+id/llageInputs"
-            android:layout_width="match_parent"
-            android:layout_height="48dip"
-            android:layout_marginBottom="7dp"
-            android:focusableInTouchMode="true"
-            android:visibility="gone">
-            <EditText
-                android:id="@+id/yearsInput"
-                android:background="@drawable/input_left_rounded_corners_gradient"
+            <!-- BEGIN: FIRST LINE BUTTONS -->
+            <LinearLayout
+                android:id="@+id/llfirstline"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textSize="14sp"
-                android:fontFamily="sans-serif"
-                android:singleLine="true"
-                android:gravity="center"
-                android:lineSpacingExtra="8sp"
-                android:textStyle="normal"
-                android:textColor="#ffffff"
-                android:textColorHint="#ffffff"
-                android:inputType="number"
-                android:layout_weight="1"
-                android:hint="Years old"/>
-            <EditText
-                android:id="@+id/monthsInput"
-                android:background="@drawable/input_gradient"
-                android:inputType="number"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textSize="14sp"
-                android:fontFamily="sans-serif"
-                android:singleLine="true"
-                android:gravity="center"
-                android:textStyle="normal"
-                android:textColor="#ffffff"
-                android:textColorHint="#ffffff"
-                android:lineSpacingExtra="8sp"
-                android:layout_weight="1"
-                android:hint="Months old"/>
-            <EditText
-                android:id="@+id/daysInput"
-                android:background="@drawable/input_right_rounded_corners_gradient"
-                android:inputType="number"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textSize="14sp"
-                android:fontFamily="sans-serif"
-                android:singleLine="true"
-                android:gravity="center"
-                android:textStyle="normal"
-                android:textColor="#ffffff"
-                android:textColorHint="#ffffff"
-                android:lineSpacingExtra="8sp"
-                android:layout_weight="1"
-                android:hint="Days old" />
-        </LinearLayout>
-        <!-- END: AGE INPUT FIELDS -->
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:visibility="gone">
+                <Button
+                    android:id="@+id/ageButton"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/button_left_rounded_corners_gradient"
+                    android:text="Age"
+                    android:textColor="#ffffff"
+                    android:lineSpacingExtra="8sp"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"/>
+                <Button
+                    android:id="@+id/dobButton"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/button_right_rounded_corners_gradient"
+                    android:text="DOB"
+                    android:textColor="#ffffff"
+                    android:lineSpacingExtra="8sp"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <!-- END: FIRST LINE BUTTONS -->
 
-        <!-- BEGIN: DOB INPUT FIELDS -->
-        <LinearLayout
-                android:id="@+id/lldobInputs"
+            <!-- BEGIN: AGE INPUT FIELDS -->
+            <LinearLayout
+                android:id="@+id/llageInputs"
                 android:layout_width="match_parent"
                 android:layout_height="48dip"
                 android:layout_marginBottom="7dp"
                 android:focusableInTouchMode="true"
                 android:visibility="gone">
-            <EditText
-                    android:id="@+id/dobMonthInput"
+                <EditText
+                    android:id="@+id/yearsInput"
                     android:background="@drawable/input_left_rounded_corners_gradient"
-                    android:inputType="number"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="14sp"
                     android:fontFamily="sans-serif"
                     android:singleLine="true"
                     android:gravity="center"
+                    android:lineSpacingExtra="8sp"
                     android:textStyle="normal"
                     android:textColor="#ffffff"
                     android:textColorHint="#ffffff"
-                    android:lineSpacingExtra="8sp"
+                    android:inputType="number"
                     android:layout_weight="1"
-                    android:hint="Month"/>
-            <EditText
-                    android:id="@+id/dobDayInput"
+                    android:hint="Years old"/>
+                <EditText
+                    android:id="@+id/monthsInput"
                     android:background="@drawable/input_gradient"
                     android:inputType="number"
                     android:layout_width="match_parent"
@@ -159,10 +106,180 @@
                     android:textColorHint="#ffffff"
                     android:lineSpacingExtra="8sp"
                     android:layout_weight="1"
-                    android:hint="Day" />
-            <EditText
-                    android:id="@+id/dobYearInput"
+                    android:hint="Months old"/>
+                <EditText
+                    android:id="@+id/daysInput"
                     android:background="@drawable/input_right_rounded_corners_gradient"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:textStyle="normal"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:lineSpacingExtra="8sp"
+                    android:layout_weight="1"
+                    android:hint="Days old" />
+            </LinearLayout>
+            <!-- END: AGE INPUT FIELDS -->
+
+            <!-- BEGIN: DOB INPUT FIELDS -->
+            <LinearLayout
+                    android:id="@+id/lldobInputs"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dip"
+                    android:layout_marginBottom="7dp"
+                    android:focusableInTouchMode="true"
+                    android:visibility="gone">
+                <EditText
+                        android:id="@+id/dobMonthInput"
+                        android:background="@drawable/input_left_rounded_corners_gradient"
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif"
+                        android:singleLine="true"
+                        android:gravity="center"
+                        android:textStyle="normal"
+                        android:textColor="#ffffff"
+                        android:textColorHint="#ffffff"
+                        android:lineSpacingExtra="8sp"
+                        android:layout_weight="1"
+                        android:hint="Month"/>
+                <EditText
+                        android:id="@+id/dobDayInput"
+                        android:background="@drawable/input_gradient"
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif"
+                        android:singleLine="true"
+                        android:gravity="center"
+                        android:textStyle="normal"
+                        android:textColor="#ffffff"
+                        android:textColorHint="#ffffff"
+                        android:lineSpacingExtra="8sp"
+                        android:layout_weight="1"
+                        android:hint="Day" />
+                <EditText
+                        android:id="@+id/dobYearInput"
+                        android:background="@drawable/input_right_rounded_corners_gradient"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif"
+                        android:singleLine="true"
+                        android:gravity="center"
+                        android:lineSpacingExtra="8sp"
+                        android:textStyle="normal"
+                        android:textColor="#ffffff"
+                        android:textColorHint="#ffffff"
+                        android:inputType="number"
+                        android:layout_weight="1"
+                        android:hint="Year"/>
+            </LinearLayout>
+            <!-- END: DOB INPUT FIELDS -->
+
+            <!-- BEGIN: SECOND LINE BUTTONS -->
+            <LinearLayout
+                android:id="@+id/llsecondline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+                <Button
+                    android:id="@+id/sexButton"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/button_left_rounded_corners_gradient"
+                    android:text="Sex"
+                    android:textColor="#ffffff"
+                    android:lineSpacingExtra="8sp"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"/>
+                <Button
+                    android:id="@+id/htButton"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/button_right_rounded_corners_gradient"
+                    android:text="Ht."
+                    android:textColor="#ffffff"
+                    android:lineSpacingExtra="8sp"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <!-- END: SECOND LINE BUTTONS -->
+
+            <!-- BEGIN: SEX BUTTON FIELDS -->
+            <LinearLayout
+                android:id="@+id/llsexInputs"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginBottom="7dp"
+                android:visibility="gone">
+                <Button
+                    android:id="@+id/femaleButton"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/input_left_rounded_corners_gradient"
+                    android:text="Female"
+                    android:textColor="#ffffff"
+                    android:lineSpacingExtra="8sp"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"/>
+                <Button
+                    android:id="@+id/maleButton"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/input_gradient"
+                    android:text="Male"
+                    android:textColor="#ffffff"
+                    android:lineSpacingExtra="8sp"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"/>
+                <Button
+                    android:id="@+id/unspecifiedButton"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/input_right_rounded_corners_gradient"
+                    android:text="Unspecified"
+                    android:textColor="#ffffff"
+                    android:lineSpacingExtra="8sp"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <!-- END: SEX BUTTON FIELDS -->
+
+            <!-- BEGIN: HT INPUT FIELDS -->
+            <LinearLayout
+                android:id="@+id/llhtInputs"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:layout_marginBottom="7dp"
+                android:focusableInTouchMode="true"
+                android:visibility="gone">
+                <EditText
+                    android:id="@+id/feetInput"
+                    android:nextFocusForward="@+id/inchInput"
+                    android:background="@drawable/input_left_rounded_corners_gradient"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="14sp"
@@ -175,168 +292,57 @@
                     android:textColorHint="#ffffff"
                     android:inputType="number"
                     android:layout_weight="1"
-                    android:hint="Year"/>
+                    android:hint="00 ft"/>
+                <EditText
+                    android:id="@+id/inchInput"
+                    android:background="@drawable/input_gradient"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:textStyle="normal"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:lineSpacingExtra="8sp"
+                    android:layout_weight="1"
+                    android:hint="00 in" />
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"/>
+                <EditText
+                    android:id="@+id/cmInput"
+                    android:background="@drawable/input_right_rounded_corners_gradient"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:textStyle="normal"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:lineSpacingExtra="8sp"
+                    android:layout_weight="1"
+                    android:hint="00 cm" />
+            </LinearLayout>
+            <!-- END: HT INPUT FIELDS -->
         </LinearLayout>
-        <!-- END: DOB INPUT FIELDS -->
-
-        <!-- BEGIN: SECOND LINE BUTTONS -->
-        <LinearLayout
-            android:id="@+id/llsecondline"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:visibility="gone">
-            <Button
-                android:id="@+id/sexButton"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/button_left_rounded_corners_gradient"
-                android:text="Sex"
-                android:textColor="#ffffff"
-                android:lineSpacingExtra="8sp"
-                android:textSize="14sp"
-                android:fontFamily="sans-serif"
-                android:textStyle="bold"/>
-            <TextView
-                android:layout_width="1dp"
-                android:layout_height="wrap_content"
-                android:background="@android:color/white"/>
-            <Button
-                android:id="@+id/htButton"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/button_right_rounded_corners_gradient"
-                android:text="Ht."
-                android:textColor="#ffffff"
-                android:lineSpacingExtra="8sp"
-                android:textSize="14sp"
-                android:fontFamily="sans-serif"
-                android:textStyle="bold"/>
-        </LinearLayout>
-        <!-- END: SECOND LINE BUTTONS -->
-
-        <!-- BEGIN: SEX BUTTON FIELDS -->
-        <LinearLayout
-            android:id="@+id/llsexInputs"
-            android:layout_width="match_parent"
-            android:layout_height="48dip"
-            android:layout_marginBottom="7dp"
-            android:visibility="gone">
-            <Button
-                android:id="@+id/femaleButton"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/input_left_rounded_corners_gradient"
-                android:text="Female"
-                android:textColor="#ffffff"
-                android:lineSpacingExtra="8sp"
-                android:textSize="14sp"
-                android:fontFamily="sans-serif"
-                android:textStyle="bold"/>
-            <Button
-                android:id="@+id/maleButton"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/input_gradient"
-                android:text="Male"
-                android:textColor="#ffffff"
-                android:lineSpacingExtra="8sp"
-                android:textSize="14sp"
-                android:fontFamily="sans-serif"
-                android:textStyle="bold"/>
-            <Button
-                android:id="@+id/unspecifiedButton"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:background="@drawable/input_right_rounded_corners_gradient"
-                android:text="Unspecified"
-                android:textColor="#ffffff"
-                android:lineSpacingExtra="8sp"
-                android:textSize="14sp"
-                android:fontFamily="sans-serif"
-                android:textStyle="bold"/>
-        </LinearLayout>
-        <!-- END: SEX BUTTON FIELDS -->
-
-        <!-- BEGIN: HT INPUT FIELDS -->
-        <LinearLayout
-            android:id="@+id/llhtInputs"
-            android:layout_width="match_parent"
-            android:layout_height="48dip"
-            android:layout_marginBottom="7dp"
-            android:focusableInTouchMode="true"
-            android:visibility="gone">
-            <EditText
-                android:id="@+id/feetInput"
-                android:nextFocusForward="@+id/inchInput"
-                android:background="@drawable/input_left_rounded_corners_gradient"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textSize="14sp"
-                android:fontFamily="sans-serif"
-                android:singleLine="true"
-                android:gravity="center"
-                android:lineSpacingExtra="8sp"
-                android:textStyle="normal"
-                android:textColor="#ffffff"
-                android:textColorHint="#ffffff"
-                android:inputType="number"
-                android:layout_weight="1"
-                android:hint="00 ft"/>
-            <EditText
-                android:id="@+id/inchInput"
-                android:background="@drawable/input_gradient"
-                android:inputType="number"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textSize="14sp"
-                android:fontFamily="sans-serif"
-                android:singleLine="true"
-                android:gravity="center"
-                android:textStyle="normal"
-                android:textColor="#ffffff"
-                android:textColorHint="#ffffff"
-                android:lineSpacingExtra="8sp"
-                android:layout_weight="1"
-                android:hint="00 in" />
-            <TextView
-                android:layout_width="1dp"
-                android:layout_height="wrap_content"
-                android:background="@android:color/white"/>
-            <EditText
-                android:id="@+id/cmInput"
-                android:background="@drawable/input_right_rounded_corners_gradient"
-                android:inputType="number"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textSize="14sp"
-                android:fontFamily="sans-serif"
-                android:singleLine="true"
-                android:gravity="center"
-                android:textStyle="normal"
-                android:textColor="#ffffff"
-                android:textColorHint="#ffffff"
-                android:lineSpacingExtra="8sp"
-                android:layout_weight="1"
-                android:hint="00 cm" />
-        </LinearLayout>
-        <!-- END: HT INPUT FIELDS -->
 
         <!-- *************************************************************************** -->
         <!-- **************                SECTION 2                      ************** -->
         <!-- *************************************************************************** -->
 
         <android.support.v4.view.ViewPager
-            android:id="@+id/viewpager"
+            android:id="@+id/viewPager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:layout_weight="2"
-            android:background="@color/colorAccent"/>
+            android:layout_weight="2"/>
 
         <!-- *************************************************************************** -->
         <!-- **************                 SECTION 3                     ************** -->
@@ -346,22 +352,67 @@
             android:id="@+id/ll3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="5">
+            android:gravity="center"
+            android:layout_weight="4">
+
             <LinearLayout
-                android:id="@+id/ll4"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_alignParentBottom="true"
-                android:gravity="right"
-                android:orientation="horizontal">
-            <android.support.design.widget.FloatingActionButton
-                android:id="@+id/fab"
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:layout_gravity="end|bottom"
-                android:src="@drawable/fab_gradient"/>
-                <!--android:layout_margin="20dp"-->
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+                <com.viewpagerindicator.CirclePageIndicator
+                        android:id="@+id/indicator"
+                        android:padding="10dip"
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        app:radius="5dp"
+                        app:fillColor="#275066"
+                        app:strokeColor="#396782"
+                        app:strokeWidth="1dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:paddingRight="25dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="end|center"
+                    android:src="@drawable/fab_gradient"/>
+            </LinearLayout>
+
+
+           <!-- <LinearLayout
+                    android:id="@+id/ll4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+                <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/fab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="end|bottom"
+                        android:src="@drawable/fab_gradient"/>
+                &lt;!&ndash;android:layout_margin="16dp"&ndash;&gt;
+            </LinearLayout>-->
+
+
         </LinearLayout>
 
 
