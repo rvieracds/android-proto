@@ -167,6 +167,8 @@ class MainActivity : AppCompatActivity() {
             llageInputs.visibility = View.VISIBLE
         }
 
+
+
         yearsInput.setOnKeyListener(View.OnKeyListener { view, keyCode, keyevent ->
             //If the keyevent is a key-down event on the "enter" button
             if (keyevent.action == KeyEvent.ACTION_DOWN && keyCode == KeyEvent.KEYCODE_ENTER) {
