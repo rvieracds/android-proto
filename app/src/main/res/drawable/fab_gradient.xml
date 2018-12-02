@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <gradient
+                android:angle="270"
+                android:startColor="@color/topColorFAB"
+                android:endColor="@color/bottomColorFAB"
+                />
+        </shape>
+    </item>
+</selector>-->
+
+
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+            <gradient
+                android:angle="270"
+                android:startColor="@color/topColorFAB"
+                android:endColor="@color/bottomColorFAB" />
+        </shape>
+    </item>
+    <item
+        android:gravity="center"
+        android:bottom="16dp"
+        android:top="16dp"
+        android:right="19dp"
+        android:left="19dp"
+        >
+        <bitmap
+            android:src="@drawable/baseline_keyboard_voice_24_px_1"
+         />
+    </item>
+</layer-list>

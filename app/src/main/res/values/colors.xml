@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#10416c</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="topColorActionBar">#10426c</color>
+    <color name="bottomColorActionBar">#196592</color>
+
+    <color name="topColorFAB">#f9dd57</color>
+    <color name="bottomColorFAB">#f0b82c</color>
+
+    <color name="white">#ffffff</color>
+
+    <color name="topColorInput">#0a4a72</color>
+    <color name="bottomColorInput">#052743</color>
+
+    <color name="clrDatePrimary">#0a4a72</color>
+    <color name="clrDatePrimaryDark">#052743</color>
+    <color name="clrDateAccent">#052743</color>
+</resources>
