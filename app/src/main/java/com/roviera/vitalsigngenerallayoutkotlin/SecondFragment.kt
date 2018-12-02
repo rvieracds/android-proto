@@ -13,11 +13,11 @@ class SecondFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         val view = inflater.inflate(R.layout.fragment_second, container, false)
-        val textView = view.findViewById<TextView>(R.id.txtMain)
+        /*val textView = view.findViewById<TextView>(R.id.txtMain)
         textView.setText(R.string.second_fragment)
 
         val imageView = view.findViewById<ImageView>(R.id.imgMain)
-        imageView.setImageResource(R.mipmap.ic_launcher)
+        imageView.setImageResource(R.mipmap.ic_launcher)*/
 
         return view
     }

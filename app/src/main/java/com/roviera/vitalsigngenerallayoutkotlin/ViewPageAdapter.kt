@@ -6,14 +6,16 @@ import android.support.v4.app.FragmentPagerAdapter
 
 class ViewPagerAdapter internal constructor(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
-    private val COUNT = 3
+    private val COUNT = 5
 
     override fun getItem(position: Int): Fragment? {
         var fragment: Fragment? = null
         when (position) {
             0 -> fragment = FirstFragment()
             1 -> fragment = SecondFragment()
-            2 -> fragment = ThirdFragment()
+            2 -> fragment = SecondFragment()
+            3 -> fragment = SecondFragment()
+            4 -> fragment = SecondFragment()
         }
 
         return fragment

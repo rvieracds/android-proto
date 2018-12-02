@@ -4,30 +4,49 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_light"
     android:gravity="center"
     android:orientation="vertical">
 
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:text="@string/tutorial_by"
-            android:textColor="@android:color/white"
-            android:textSize="18sp"
-            android:textStyle="bold"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_blue_light"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="60dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"/>
 
-    <ImageView
-            android:id="@+id/imgMain"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:contentDescription="@string/no_image"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_green_light"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="60dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"/>
 
-    <TextView
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_purple"
+            android:orientation="horizontal"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="60dp"
+            android:layout_weight="1"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_red_light"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="60dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"/>
+
+    <!--<TextView
             android:id="@+id/txtMain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@android:color/white"
-            android:textSize="17sp"/>
+            android:textSize="17sp"/>-->
 </LinearLayout>

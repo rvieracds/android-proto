@@ -11,42 +11,10 @@ import java.util.*
 
 import android.support.design.widget.Snackbar
 import android.support.v4.view.ViewPager
-
-
 import kotlin.math.roundToInt
-import android.support.v4.app.FragmentPagerAdapter
-
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentManager
-
 import com.viewpagerindicator.CirclePageIndicator;
-import com.viewpagerindicator.TitlePageIndicator;
-
 
 class MainActivity : AppCompatActivity() {
-
-    //internal var llfirstline: LinearLayout? = null;
-    /*private var llsecondline: LinearLayout? = null;
-    private var llageInputs: LinearLayout? = null;
-    private var llhtInputs: LinearLayout? = null;
-    private var llsexInputs: LinearLayout? = null;
-
-    private var ageButton: Button? = null;
-    private var dobButton: Button? = null;
-    private var sexButton: Button? = null;
-    private var htButton: Button? = null;
-    private var femaleButton: Button? = null;
-    private var maleButton: Button? = null;
-    private var unspecifiedButton: Button? = null;
-
-    private var yearsInput: EditText? = null;
-    private var monthsInput: EditText? = null;
-    private var daysInput: EditText? = null;
-    private var feetInput: EditText? = null;
-    private var inchInput: EditText? = null;
-    private var cmInput: EditText? = null;*/
-
-    //internal var datePickerDialog: DatePickerDialog? = null;
 
     var centimeters = 0.0;
     var globalFeet = 0.0;
@@ -55,7 +23,6 @@ class MainActivity : AppCompatActivity() {
     var dobD = "";
     var dobY = "";
     var dobDate = "";
-
 
     // GET LINEARLAYOUT INSTANCES
     lateinit var llfirstline: LinearLayout
