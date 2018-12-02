@@ -9,9 +9,15 @@
                 android:angle="270"
                 android:gradientRadius="90"
                 />
-             <corners
-                android:topRightRadius="5dp"
-                />
+             <corners android:topRightRadius="5dp"/>
+        </shape>
+    </item>
+
+    <!--button pressed state background color-->
+    <item android:state_focused="false" android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#042540" />
+            <corners android:topRightRadius="5dp"/>
         </shape>
     </item>
 </selector>

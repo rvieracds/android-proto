@@ -9,11 +9,6 @@
                 android:angle="270"
                 android:gradientRadius="90"
                 />
-            <!--apply a border around button-->
-            <!--stroke android:color="#11486d" android:width="2dp" /-->
-            <!-- make the button corners rounded-->
-            <!--<corners android:radius="5dp"/>-->
-
             <corners
                 android:topLeftRadius="5dp"
                 android:topRightRadius="5dp"
