@@ -4,8 +4,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <color name="topColorActionBar">#10426c</color>
-    <color name="bottomColorActionBar">#196592</color>
+    <color name="topColorActionBar">#196592</color>
+    <color name="bottomColorActionBar">#10426c</color>
 
     <color name="topColorFAB">#f9dd57</color>
     <color name="bottomColorFAB">#f0b82c</color>

@@ -619,12 +619,12 @@ class MainActivity : AppCompatActivity() {
 
 
         // FLOATING ACTION BUTTON ACTION
-        /*val fab: View = findViewById(R.id.fab)
+        val fab: View = findViewById(R.id.fab)
         fab.setOnClickListener { view ->
-            Snackbar.make(view, "Here's a Snackbar", Snackbar.LENGTH_LONG)
+            Snackbar.make(view, "Coming soon!", Snackbar.LENGTH_LONG)
                 .setAction("Action", null)
-                .show()*/
-        //}
+                .show()
+        }
     }
 
     private fun updateDOB(year: String, month: String, day: String): String {
