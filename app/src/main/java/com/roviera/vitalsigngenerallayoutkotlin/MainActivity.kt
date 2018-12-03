@@ -13,6 +13,7 @@ import android.support.design.widget.Snackbar
 import android.support.v4.view.ViewPager
 import kotlin.math.roundToInt
 import com.viewpagerindicator.CirclePageIndicator;
+import kotlinx.android.synthetic.main.fragment_first.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -133,8 +134,6 @@ class MainActivity : AppCompatActivity() {
             llfirstline.visibility = View.GONE
             llageInputs.visibility = View.VISIBLE
         }
-
-
 
         yearsInput.setOnKeyListener(View.OnKeyListener { view, keyCode, keyevent ->
             //If the keyevent is a key-down event on the "enter" button
@@ -490,7 +489,7 @@ class MainActivity : AppCompatActivity() {
 
                     htButton.setBackgroundResource(R.drawable.input_right_rounded_corners_gradient)
 
-                    inchInput.requestFocus();
+                    //inchInput.requestFocus();
 
                 } else {
                     htButton.text = "Ht."
@@ -533,10 +532,10 @@ class MainActivity : AppCompatActivity() {
                         cmInput.setText(centimeters.roundToInt().toString() + " cm")
                     } else if (strValue2 != "") {
                         htButton.text = "$strValue2 ft"
-                        globalInch = (java.lang.Double.valueOf(strValue))*2.54
+                        globalInch = (java.lang.Double.valueOf(strValue)) * 2.54
                         centimeters = globalFeet + globalInch;
                         cmInput.setText(centimeters.roundToInt().toString() + " cm")
-                    }
+                    }//} else if (strValue != "") { }
 
                     htButton.setBackgroundResource(R.drawable.input_right_rounded_corners_gradient)
 

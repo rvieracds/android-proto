@@ -9,7 +9,7 @@
 
     <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:background="@android:color/holo_blue_light"
             android:layout_marginVertical="20dp"
             android:layout_marginHorizontal="60dp"
@@ -18,7 +18,7 @@
 
     <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:background="@android:color/holo_green_light"
             android:layout_marginVertical="20dp"
             android:layout_marginHorizontal="60dp"
@@ -27,7 +27,7 @@
 
     <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:background="@android:color/holo_purple"
             android:orientation="horizontal"
             android:layout_marginVertical="20dp"
@@ -35,18 +35,94 @@
             android:layout_weight="1"/>
 
     <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@android:color/holo_red_light"
-            android:layout_marginVertical="20dp"
-            android:layout_marginHorizontal="60dp"
-            android:orientation="horizontal"
-            android:layout_weight="1"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light"
+        android:orientation="horizontal"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="60dp"
+        android:layout_weight="1"/>
 
-    <!--<TextView
-            android:id="@+id/txtMain"
+    <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
-            android:textSize="17sp"/>-->
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="40dp"
+            android:orientation="horizontal"
+            android:layout_gravity="end|center"
+            android:gravity="top"
+            android:focusableInTouchMode="true"
+            android:layout_weight="0">
+
+        <EditText
+            android:id="@+id/hrInput"
+            android:layout_width="39dp"
+            android:layout_height="wrap_content"
+            android:hint="HR"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textColorHint="#0a3b57"
+            android:inputType="number"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="16sp"
+            android:textColor="#0a3b57"
+            android:textStyle="normal"
+            android:gravity="center_horizontal"
+            android:backgroundTint="@color/underlineColorInputs"
+            />
+
+        <EditText
+            android:id="@+id/rrInput"
+            android:layout_width="39dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:hint="RR"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textColorHint="#0a3b57"
+            android:inputType="number"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="16sp"
+            android:textColor="#0a3b57"
+            android:textStyle="normal"
+            android:gravity="center_horizontal"
+            android:backgroundTint="@color/underlineColorInputs"
+            />
+
+        <EditText
+            android:id="@+id/sbpInput"
+            android:layout_width="39dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:hint="SBP"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textColorHint="#0a3b57"
+            android:inputType="number"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="16sp"
+            android:textColor="#0a3b57"
+            android:textStyle="normal"
+            android:gravity="center_horizontal"
+            android:backgroundTint="@color/underlineColorInputs"
+            />
+
+        <EditText
+            android:id="@+id/dbpInput"
+            android:layout_width="39dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:hint="DBP"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textColorHint="#0a3b57"
+            android:inputType="number"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="16sp"
+            android:textColor="#0a3b57"
+            android:textStyle="normal"
+            android:gravity="center_horizontal"
+            android:backgroundTint="@color/underlineColorInputs"
+            />
+    </LinearLayout>
 </LinearLayout>

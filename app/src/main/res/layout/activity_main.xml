@@ -277,39 +277,46 @@
                 android:layout_marginBottom="7dp"
                 android:focusableInTouchMode="true"
                 android:visibility="gone">
-                <EditText
-                    android:id="@+id/feetInput"
-                    android:nextFocusForward="@+id/inchInput"
-                    android:background="@drawable/input_left_rounded_corners_gradient"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textSize="14sp"
-                    android:fontFamily="sans-serif"
-                    android:singleLine="true"
-                    android:gravity="center"
-                    android:lineSpacingExtra="8sp"
-                    android:textStyle="normal"
-                    android:textColor="#ffffff"
-                    android:textColorHint="#ffffff"
-                    android:inputType="number"
-                    android:layout_weight="1"
-                    android:hint="00 ft"/>
-                <EditText
-                    android:id="@+id/inchInput"
-                    android:background="@drawable/input_gradient"
-                    android:inputType="number"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textSize="14sp"
-                    android:fontFamily="sans-serif"
-                    android:singleLine="true"
-                    android:gravity="center"
-                    android:textStyle="normal"
-                    android:textColor="#ffffff"
-                    android:textColorHint="#ffffff"
-                    android:lineSpacingExtra="8sp"
-                    android:layout_weight="1"
-                    android:hint="00 in" />
+                    android:layout_height="48dip"
+                    android:layout_marginBottom="7dp"
+                    android:focusableInTouchMode="true"
+                    android:layout_weight="1">
+                    <EditText
+                        android:id="@+id/feetInput"
+                        android:nextFocusForward="@+id/inchInput"
+                        android:background="@drawable/input_left_rounded_corners_gradient"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif"
+                        android:singleLine="true"
+                        android:gravity="center"
+                        android:lineSpacingExtra="8sp"
+                        android:textStyle="normal"
+                        android:textColor="#ffffff"
+                        android:textColorHint="#ffffff"
+                        android:inputType="number"
+                        android:layout_weight="1"
+                        android:hint="00 ft"/>
+                    <EditText
+                        android:id="@+id/inchInput"
+                        android:background="@drawable/input_gradient"
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif"
+                        android:singleLine="true"
+                        android:gravity="center"
+                        android:textStyle="normal"
+                        android:textColor="#ffffff"
+                        android:textColorHint="#ffffff"
+                        android:lineSpacingExtra="8sp"
+                        android:layout_weight="1"
+                        android:hint="00 in" />
+                </LinearLayout>
                 <TextView
                     android:layout_width="1dp"
                     android:layout_height="wrap_content"
@@ -385,7 +392,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="right"
-                    android:paddingRight="25dp"
+                    android:paddingEnd="25dp"
                     android:orientation="horizontal"
                     android:layout_weight="1">
                 <android.support.design.widget.FloatingActionButton
@@ -395,27 +402,6 @@
                     android:layout_gravity="end|center"
                     android:src="@drawable/fab_gradient"/>
             </LinearLayout>
-
-
-           <!-- <LinearLayout
-                    android:id="@+id/ll4"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:layout_alignParentBottom="true"
-                    android:gravity="right"
-                    android:orientation="horizontal">
-                <android.support.design.widget.FloatingActionButton
-                        android:id="@+id/fab"
-                        android:layout_width="wrap_content"
-                        android:layout_height="fill_parent"
-                        android:layout_gravity="end|bottom"
-                        android:src="@drawable/fab_gradient"/>
-                &lt;!&ndash;android:layout_margin="16dp"&ndash;&gt;
-            </LinearLayout>-->
-
-
         </LinearLayout>
-
-
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
